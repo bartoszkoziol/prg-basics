@@ -19,3 +19,4 @@ inches = total_inches % cm_per_foot  # Modulus (remainder of division)
 
 # Output the result
 print(f'I am {cm} cm tall, i.e. {int(feet)} feet and {inches:.0f} inches')
+print(f'I am {cm} cm tall, i.e. {int(feet)} feet and {inches} inches')
