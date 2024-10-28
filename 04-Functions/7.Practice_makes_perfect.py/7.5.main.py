@@ -1,13 +1,15 @@
-from card_masker_module_7_5 import hide
+from card_masker_module_7_5 import mask_credit_card
 
 def main():
-    card_input = input("Podaj numer karty: ")
+     # Pobranie numeru karty od użytkownika
+    user_input = input("Podaj numer karty: ")
 
-    result = hide(card_input)
+    masked_card = mask_credit_card(user_input)
 
-    if result == "Nieprawidłowy numer karty. Numer musi mieć dokładnie 16 cyfr.":
-        print(result)
+    if masked_card == "Nieprawidłowy numer karty. Numer musi mieć dokładnie 16 cyfr.":
+        print(masked_card)
     else:
-        print(f"Zamaskowany numer karty: {result}") 
+        print(f"Zamaskowany numer karty: {masked_card}")
+
 if __name__ == "__main__":
-    main()  
+    main()  # Uruchamiamy program
