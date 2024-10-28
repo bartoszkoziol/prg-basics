@@ -1,2 +1,6 @@
-for i in range(1,10):
-    print(str(i)*i)
+def my_function(fname):
+  print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")

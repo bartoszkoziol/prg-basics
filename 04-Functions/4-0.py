@@ -1,31 +1,28 @@
 def time_string(hours,minutes,time_format):
-
-    if not (0 <= hours <= 23):
-        return 'Nieprawidłowa godzina - musi być między 0 a 23'
-    elif not (0 <= minutes <= 59):
-        return 'Nieprawidłowe minuty - muszą być między 0 a 59'
     
+    if not (0 <= hours <= 23):
+        return "Enter valid hours"
+    elif not (0 <= minutes <= 59):
+        return "Enter valid minutes"
 
-
-    if time_format=='24':
-        return f"{hours:02}:{minutes:02}"
-    elif time_format=='12':
+    if time_format == '24':
+        return f"{hours:02}:{minutes:02}, {time_format}"
+    elif time_format == '12':
         if hours == 0:
-            formated_hour = 12
+            formated_hour=12
             suffix = 'am'
         elif hours < 12:
+            formated_hour = hours
+            suffix = 'am'
+        elif hours == 12:
             formated_hour=hours
-            suffix='am'
-        elif hours==12:
-            formated_hour=12
             suffix='am'
         else:
             formated_hour=hours-12
             suffix='pm'
-        return f"{formated_hour}:{minutes:02}{suffix}"
+        return f"{formated_hour}:{minutes} {suffix},{time_format}"
     else:
         return "Enter valid time format, use 12 or 24"
-              
 print(time_string(15, 38, '24'))  # '15:38'
 print(time_string(8, 3, '24'))    # '08:03'
 print(time_string(0, 5, '24'))    # '00:05'

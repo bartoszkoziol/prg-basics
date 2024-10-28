@@ -6,8 +6,9 @@ import math
 
 def triangle_area(a,b,c):
     p=0.5*(a+b+c)
-    area=math.sqrt(p*(p-a)*(p-b)*(p-c))
-    return area
+    triangle_area=math.sqrt(p*(p-a)*(p-b)*(p-c))
+    return triangle_area
+
 
 
 print(f'The area of ​​a triangle with sides 3,4,5 is {triangle_area(3,4,5)}')
