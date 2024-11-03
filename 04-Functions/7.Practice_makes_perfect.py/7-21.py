@@ -5,6 +5,6 @@ def f(name):
         acronym+=first_letter
         #lub acronym+=word[0]
     return acronym
-
+    
 print(f("Internet of Things"))
 print(f("For Your Information"))
