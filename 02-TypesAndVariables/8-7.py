@@ -1,10 +1,9 @@
 #decimal to binar and hexadecimal converter
 
-number = int(input("Podaj liczbę, którą chcesz przekonwertować: "))
+input_number = int(input("Enter your number: "))
 
-binar = bin(number)[2:]  #[2:] pobieramy wycinek zaczynajac od 2 miejsca hello = llo
-hex = hex(number)[2:].upper()
+bin_number = bin(input_number)[2:]
+hex_number = hex(input_number)[2:].upper()
 
-
-print(f"Liczba {number} w systemie binarnym to {binar}")
-print(f"Liczba {number} w systemie szesnastkowym to {hex}")
+print(f"{input_number} is equal to {bin_number} in binary system")
+print(f"{input_number} is equal to {hex_number} in hex system")
