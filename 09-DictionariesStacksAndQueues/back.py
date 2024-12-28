@@ -13,12 +13,13 @@ while True:
 
    if website == '0':
       if visited_websites.empty():
+         print("No previously visited websites. Exiting program")
          break
       else:
          print('<-- Going back to a previously visited website')
-         website = ...
-   elif ... != "":
-      ...
+         website = visited_websites.get()
+   elif website != "":
+      visited_websites.put(website)
 
    # print name of website you are currently viewing
    print('You are currently viewing:', website)

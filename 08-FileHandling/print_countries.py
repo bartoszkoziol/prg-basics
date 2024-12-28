@@ -1,9 +1,6 @@
 ###
-# Reads from file, line by line
+# Reads from file, line by line and prints numbered list of countries
 #
-with open(r'C:\Users\Bartek\Desktop\prg-basics\08-FileHandling\countries.txt', 'r') as file:
-    counter=1
+with open('countries.txt', 'r') as file:
     for line in file:
-        # print(line, end="")
-        print(f"{counter}. {line}",end="")
-        counter+=1
+        print(line, end="")

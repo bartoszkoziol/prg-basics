@@ -7,3 +7,19 @@ class SocialMediaProfile:
         self.posts.append(content)
         print(f"{self.username} added a new post: {content}")
 
+    def display_timeline(self):
+        print(f"{self.username}'s Timeline: ")
+        for i, post in enumerate(self.posts, start=1):
+            print(f"{i}. {post}")
+    
+    
+def main():
+    user=SocialMediaProfile("Johndoe")
+
+    user.add_post("Hello World!")
+    user.add_post("What's up?")
+
+    user.display_timeline()
+
+main()
+
