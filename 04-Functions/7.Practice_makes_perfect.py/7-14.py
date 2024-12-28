@@ -11,3 +11,4 @@ def f(detector):
     return False
 print(f("+-+++-+---"))
 print(f("+-+-+-+-"))
+

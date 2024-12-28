@@ -6,3 +6,4 @@ def suma(n):
     return n+suma(n-1)
 
 print(suma(10))
+    

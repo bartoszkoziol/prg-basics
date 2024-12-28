@@ -17,7 +17,7 @@ def seats_available(cinema_seats):
 def seats_booked(seats):
    return sum(row.count("B") for row in cinema_seats)
 
-def seat_status(cinema_seats, row, place):
+def seat_status(cinema_seats, row, place): 
    return cinema_seats[row-1][place-1]
 
 print('CINEMA INFORMATION TABLE')

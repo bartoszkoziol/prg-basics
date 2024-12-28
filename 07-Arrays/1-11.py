@@ -23,11 +23,20 @@ max_temp = max(temperatures)
 # calculates number of days with negative temp
 negative_temp = 0
 i = 0
-while i < mesaurements:
-   if temperatures[i] < 0:
-      negative_temp+=1
-   i +=1
-
+# while i < mesaurements:
+#    if temperatures[i] < 0:
+#       negative_temp+=1
+#    i +=1
+#####
+#lub
+#####
+# for temp in temperatures:
+#    if temp<0:
+#       negative_temp+=1
+#####
+#lub
+#####
+negative_temp = sum(1 for temp in temperatures if temp<0)
 # prints out month report
 print("Temperature report")
 print("Month: March")

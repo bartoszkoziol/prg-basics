@@ -8,3 +8,9 @@ index=0
 while index<len(computer_games):
     print(f"{index+1}. {computer_games[index]}")
     index+=1
+
+# computer_games.sort()
+# index=0
+# for game in computer_games:
+#     print(f"{index+1}. {game}")
+#     index+=1

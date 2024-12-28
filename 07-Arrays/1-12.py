@@ -7,3 +7,4 @@ max_index = expenses.index(max_expenses) #zwraca index najwiekszej wartosci
 most_expensive_category = categories[max_index] #zwraca odpowiadajaca indexowi najwiekszego wydatku odpowiedni wydatek
 
 print(f"The most expensive category is {most_expensive_category} with an expense of {max_expenses}")
+
