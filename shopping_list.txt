@@ -1,2 +1,6 @@
 apple
 pineapple
+apple
+pineapple
+meats
+milk

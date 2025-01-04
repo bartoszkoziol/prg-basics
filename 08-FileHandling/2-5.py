@@ -19,3 +19,6 @@ while product != "0":
       print("Shopping list creation stopped") # stops entering food names ('while' breaks)
    else:
       add_product(shopping_list, product)
+
+
+

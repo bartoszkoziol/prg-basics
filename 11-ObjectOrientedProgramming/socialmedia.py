@@ -18,6 +18,7 @@ def main():
 
     user.add_post("Hello World!")
     user.add_post("What's up?")
+    user.add_post("Had a great day at the park!")
 
     user.display_timeline()
 

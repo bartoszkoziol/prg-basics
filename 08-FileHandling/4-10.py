@@ -1,6 +1,6 @@
 import csv
 
-file_path = r"C:\Users\bkozi\Desktop\prg-basics\08-FileHandling\clothing.csv"
+file_path = r"C:\Users\Bartek\Desktop\prg-basics\08-FileHandling\clothing.csv"
 
 with open(file_path, 'r') as file:
     content = csv.DictReader(file)

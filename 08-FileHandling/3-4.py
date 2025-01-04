@@ -1,7 +1,7 @@
 import re  # module for regular expressions
 
 # file name with shopping report
-email_file = r"C:\Users\bkozi\Desktop\prg-basics\08-FileHandling\report.txt"
+email_file = r"C:\Users\Bartek\Desktop\prg-basics\08-FileHandling\report.txt"
 
 # read the content of email
 with open(email_file, 'r', encoding='utf-8') as file:

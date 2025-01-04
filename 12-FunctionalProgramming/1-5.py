@@ -8,3 +8,5 @@ minutes=int(input("Enter minutes: "))
 
 average_speed = avg_speed(distance, hours, minutes)
 print(f" Average speed: {average_speed:.1f} km/h")
+
+

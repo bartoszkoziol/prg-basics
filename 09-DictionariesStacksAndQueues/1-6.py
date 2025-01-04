@@ -21,6 +21,7 @@ phone_book = {
    'Sam': '555-3030'
 }
 
-for name,number in phone_book.items():
-    if name.startswith("D"):
+for name, number in phone_book.items():
+    if name.startswith('D'):
         print(f"{name}: {number}")
+        

@@ -14,7 +14,17 @@ products = {
 for name, quantity in products.items():
     print(f"{name}: {quantity}")
 
-total_sum=0
-for name, quantity in products.items():
+for quantity in products.values():
+    total_sum=0
     total_sum+=quantity
+
 print(total_sum)
+
+
+
+
+
+
+
+
+

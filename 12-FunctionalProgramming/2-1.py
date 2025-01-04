@@ -13,4 +13,5 @@ print(f"39 pts -> {assess_test(39)}")
 print("=== MIN 60 PTS TO PASS ===")
 assess_test = min_pts(60)
 print(f"52 pts -> {assess_test(52)}")
-print(f"39 pts -> {assess_test(39)}")   
+print(f"39 pts -> {assess_test(39)}")
+
