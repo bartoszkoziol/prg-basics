@@ -7,3 +7,4 @@ print(valid_numbers)
 
 sum_of_even_nums=reduce(lambda x,y: x+y, valid_numbers)
 print(sum_of_even_nums)
+
